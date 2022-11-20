@@ -1,0 +1,228 @@
+*{
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+body {
+    margin: 0;
+    /* background-color: rgb(211, 31, 31); */
+    background-image: linear-gradient(to right, rgb(190, 27, 27),rgb(240, 42, 42) , rgb(150, 25, 25));
+    display: flex;
+    flex-direction: column;
+}
+header {
+    height: 40px;
+    background-color: rgb(71, 71, 71);
+    width: 100%;
+    /* position: fixed; */ 
+}
+.logo {
+    background-image: url(logo/3573725.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+} 
+nav {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    padding: 0 30px;
+    font-family: inherit;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+ul {
+    margin: 0;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+.mainImg {
+    background-image: url(cars/red-sports-car-ferrari-png-23.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    width: 100%;
+    height: 500px;
+    /* background-color: rgb(25, 26, 36); */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainImg:hover {
+    transform: scale(1.1);
+    transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+}
+
+.company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: violet; */
+}
+.MI-text1 {
+    color: rgb(212, 212, 212);
+    font-size: 50px;
+    margin: 0;
+}
+.MI-text2 {
+    color: rgb(212, 212, 212);
+    font-size: 15px;
+    margin: 0;
+}
+.MI-text3 {
+    color: rgb(212, 212, 212);
+    font-size: 30px;
+    margin: 0;
+}
+
+.secPict {
+    width: 90%;
+    height: auto;
+    /* background-color: tomato; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    padding: 2% 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.secPict div {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', serif;
+    font-weight: 700;
+}
+.secPict-0 {
+    width: 350px;
+    height: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    background-position-y: top;
+    background-position-y: center;
+    margin: 5px; 
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+.secPict-1 {
+    background-image: url(cars/1612265192_173-p-mashina-na-fioletovom-fone-247.png);
+}
+.secPict-2 {
+    background-image: url(cars/568e86ce84d19c94af6a47280331c6a6.png);
+}
+.secPict-3 {
+    background-image: url(cars/avto-21-0.png);
+}
+.secPict-4 {
+    background-image: url(cars/1614523760_7-p-tank-na-belom-fone-7.png);
+}
+
+footer {
+    margin-top: 100px;
+    display: flex;
+    height: 70px;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(71,71,71);
+    color: rgb(255, 255, 255);
+}
+.footer div {
+    display: flex;
+    flex-direction: column;
+}
+.foot-num-1 {
+    font-size: 10px;
+}
+.foot-em-1 {
+    font-size: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .mainImg {
+        height: 250px;
+    }
+    .secPict-0 {
+        width: 300px;
+        height: 220px;
+        padding: 0;
+    }
+    .MI-text1 {
+        font-size: 30px;
+    }
+    .MI-text2 {
+        font-size: 10px;
+    }
+    .MI-text3 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    * {
+        font-size: 10px;
+    }
+    .mainImg {
+        height: 150px;
+    }
+    .MI-text1 {
+        font-size: 20px;
+    }
+    .MI-text2 {
+        font-size: 7px;
+    }
+    .MI-text3 {
+        font-size: 10px;
+    }
+    .secPict {
+        display: flex;
+        justify-content: center;
+    }
+    .secPict-0 {
+        width: 200px;
+        height: 150px;
+        padding: 0;
+    }
+
+    .foot-num-1 {
+        font-size: 5px;
+    }
+    .foot-em-1 {
+        font-size: 5px;
+    }
+    .foot-num-2 {
+        font-size: 7px;
+    }
+    .foot-em-2 {
+        font-size: 7px;
+    }
+}
+@media screen and (width: 280px) {
+    .company {
+        margin-bottom: 25px;
+    }
+}
