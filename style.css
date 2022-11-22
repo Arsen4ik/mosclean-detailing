@@ -14,6 +14,11 @@ header {
     background-color: rgb(71, 71, 71);
     width: 100%;
 }
+.logo0 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
 .logo {
     background-image: url(logo/tire-svgrepo-com.svg);
     background-size: contain;
@@ -56,7 +61,7 @@ a {
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: center;
-    width: 100%;
+    width: 90%;
     height: 500px;
     /* background-color: rgb(25, 26, 36); */
     margin-left: auto;
@@ -96,6 +101,8 @@ a {
     /* font-family: Andale Mono, monospace; */
     font-weight: bold;
     font-size: large;
+    display: flex;
+    justify-content: center;
 }
 /* .MI-text2:active {
     background-color: rgb(250, 58, 24);
@@ -105,11 +112,11 @@ a {
 }
 
 .secPict0 {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(71, 71, 71);
     color: white;
 }
 .secPict0-p {
-    font-size: xx-large;
+    font-size: x-large;
     /* font-family: Andale Mono, monospace; */
     font-family: 'Kelly Slab', cursive;
     /* font-family: 'Ruslan Display', cursive; */
@@ -132,14 +139,16 @@ a {
 .secPict div {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', serif;
     font-weight: 700;
+    color: white;
 }
 .secPict-0 {
-    width: 450px;
-    height: 350px;
+    /* width: 450px; */
+    width: calc(33% - 42px);
+    height: 200px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: center;
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(71, 71, 71);
     border-radius: 10px;
     background-position-y: top;
     background-position-y: center;
@@ -320,7 +329,7 @@ footer {
         justify-content: center;
     }
     .secPict-0 {
-        width: 200px;
+        width: 80%;
         height: 150px;
         padding: 0;
     }
@@ -330,16 +339,16 @@ footer {
         margin-top: 20px;
     }
     .foot-num-1 {
-        font-size: 5px;
+        font-size: 8px;
     }
     .foot-em-1 {
-        font-size: 5px;
+        font-size: 8px;
     }
     .foot-num-2 {
-        font-size: 7px;
+        font-size: 12px;
     }
     .foot-em-2 {
-        font-size: 7px;
+        font-size: 12px;
     }
 }
 @media screen and (width: 280px) {
