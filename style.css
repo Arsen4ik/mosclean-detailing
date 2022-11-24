@@ -1,6 +1,6 @@
 * {
-    font-family: 'Kelly Slab', cursive;
-    /* font-family: 'Ruslan Display', cursive; */
+    font-family: 'Kelly Slab';
+    /* font-family: 'Ruslan Display'; */
 }
 
 body {
@@ -15,6 +15,7 @@ header {
     width: 100%;
 }
 .logo0 {
+    align-items: center;
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -95,12 +96,12 @@ a {
     width: 100%;
     border: 0;
     border-radius: 10px;
-    background-color: rgb(0, 0, 0, 0.7);
-    color: rgb(255, 208, 0);
+    background-color: rgba(207, 7, 0, 0.9);
+    color: rgb(0, 0, 0);
     text-shadow: rgb(250, 250, 5, 0.3) 1px 1px; 
     /* font-family: Andale Mono, monospace; */
     font-weight: bold;
-    font-size: large;
+    font-size: x-large;
     display: flex;
     justify-content: center;
 }
@@ -109,6 +110,7 @@ a {
 } */
 .MI-text2:hover {
     background-color: rgb(0, 0, 0, 0.9);
+    color: rgb(170, 22, 22);
 }
 
 .secPict0 {
@@ -123,6 +125,8 @@ a {
     font-weight: bold;
     margin-left: 5%;
 }
+
+
 .secPict {
     width: 100%;
     height: auto;
@@ -136,46 +140,102 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
-.secPict div {
+/* .secPict div {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', serif;
     font-weight: 700;
     color: white;
-}
+} */
 .secPict-0 {
-    /* width: 450px; */
     width: calc(33% - 42px);
-    height: 200px;
-    background-size: contain;
+    height: 280px;
     background-repeat: no-repeat;
-    background-position-x: center;
     background-color: rgb(71, 71, 71);
     border-radius: 10px;
-    background-position-y: top;
-    background-position-y: center;
-    margin: 7px; 
+    margin: 7px;
+    padding: 5px 0; 
 
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
     justify-content: center;
-
+    align-items: center;
 }
 .secPict-0:hover {
     transform: scale(1.05);
     transition: transform 3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    background-color: rgb(34, 34, 34);
 }
 
-.secPict-1 {
-    background-image: url(cars/1612265192_173-p-mashina-na-fioletovom-fone-247.png);
+.part1 {
+    /* background-color: white;
+    border-radius: 15px;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; */
+    width: 90%;
+    height: 90%;
+    border-radius: 3px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
 }
-.secPict-2 {
-    background-image: url(cars/568e86ce84d19c94af6a47280331c6a6.png);
+.part2 {
+    color: white;
+    font-size: large;
+    width: 90%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.secPict1 {
+    background-image: url(cars/d4d364a1-017d-499c-8b6d-29300fd030a6.jpeg);
+}
+.secPict2 {
+    background-image: url(cars/d4d364a1-017d-499c-8b6d-29300fd030a6.jpeg);
+}
+.secPict3 {
+    background-image: url(cars/d4d364a1-017d-499c-8b6d-29300fd030a6.jpeg);
+}
+.secPict4 {
+    background-image: url(cars/d4d364a1-017d-499c-8b6d-29300fd030a6.jpeg);
+}
+/*
+.paints {
+    width: 65%;
+    height: 90%;
+    border-radius: 3px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+.secPict-1-1 {
+    background-image: url(cars/0f220e43-b148-41c5-9a67-7f213fd51869.jpeg);
+    background-size: contain;
+}
+.secPict-1-2 {
+    background-size: contain;
+    background-image: url(cars/2d341dc1-53df-40cf-9932-6299e8b9407c.jpeg);
+}
+
+
+.secPict-2-1 {
+    background-image: url(cars/64713093-0812-4845-b8cf-fd00e26033fe.jpeg);
+}
+.secPict-2-2 {
+    background-image: url(cars/d4d364a1-017d-499c-8b6d-29300fd030a6.jpeg);
+}
+
 .secPict-3 {
     background-image: url(cars/avto-21-0.png);
 }
 .secPict-4 {
     background-image: url(cars/1614523760_7-p-tank-na-belom-fone-7.png);
-}
+} */
 
 footer {
     margin-top: 100px;
@@ -200,6 +260,10 @@ footer {
 .foot-em {
     max-height: 50px;
 
+}
+
+.F:hover {
+    color:rgb(101, 136, 243)
 }
 
 .foot-num-1 {
@@ -321,9 +385,7 @@ footer {
     .MI-text1 {
         font-size: 20px;
     }
-    .MI-text2 {
-        font-size: 7px;
-    }
+
     .secPict {
         display: flex;
         justify-content: center;
@@ -352,7 +414,13 @@ footer {
     }
 }
 @media screen and (width: 280px) {
+    .secPict0 {
+        margin-top: -20px;
+    }
     .company {
         margin-bottom: 25px;
+    }
+    .MI-text2 {
+        font-size: 10px;
     }
 }
