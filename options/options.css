@@ -1,0 +1,158 @@
+* {
+    font-family: 'Kelly Slab';
+    /* font-family: 'Ruslan Display'; */
+}
+
+.zaglav {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    text-shadow: black 2px 2px;
+}
+
+.primers {
+    background-color: white;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 5px;
+}
+.primer {
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5px; 
+    flex-direction: row;
+    width: 90%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: xx-large; 
+    /* border-radius: 10px; */
+    gap: 5px;
+}
+
+.pict {
+    width: calc(50% - 7.5px);
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    border-radius: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.txt {
+    width: 100px;
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(255, 255, 255, 0.7);
+    text-shadow: 2px 2px rgb(82, 82, 82);
+}
+
+.prt1 {
+    background-image: url(../cars/64713093-0812-4845-b8cf-fd00e26033fe.jpeg);  
+}
+.prt2 {
+    background-image: url(../cars/d4d364a1-017d-499c-8b6d-29300fd030a6.jpeg);
+}
+.prt3 {
+    background-image: url(../cars/64713093-0812-4845-b8cf-fd00e26033fe.jpeg);   
+}
+.prt4 {
+    background-image: url(../cars/d4d364a1-017d-499c-8b6d-29300fd030a6.jpeg);   
+}
+.prt5 {
+    background-image: url(../cars/64713093-0812-4845-b8cf-fd00e26033fe.jpeg);   
+}
+.prt6 {
+    background-image: url(../cars/d4d364a1-017d-499c-8b6d-29300fd030a6.jpeg);   
+}
+
+
+@media screen and (min-width: 539px) and (max-width: 992px) {
+    .primer {
+        height: 200px;
+    }
+    .zaglav {
+        margin: 15px 0;
+    }
+}
+
+@media screen and (width: 820px) {
+    footer {
+        margin-top: 283px;
+    }
+}
+@media screen and (width: 768px) {
+    footer {
+        margin-top: 127px;
+    }
+}
+@media screen and (width: 912px) {
+    footer {
+        margin-top: 471px;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .primer {
+        height: 100px;
+    }
+    .zaglav p {
+        font-size: 20px;
+    }
+    footer {
+        margin-top: 76px;
+    }
+}
+
+@media screen and (width: 414px){
+    footer {
+        margin-top: 342px;
+    }
+}
+@media screen and (width: 375px){
+    footer {
+        margin-top: 113px;
+    }
+}
+@media screen and (width: 390px){
+    footer {
+        margin-top: 290px;
+    }
+}
+@media screen and (width: 393px){
+    footer {
+        margin-top: 297px;
+    }
+}
+@media screen and (width: 360px){
+    footer {
+        margin-top: 186px;
+    }
+}
+@media screen and (width: 412px){
+    footer {
+        margin-top: 361px;
+    }
+}
+@media screen and (width: 280px){
+    footer {
+        margin-top: 174px;
+    }
+    .primer {
+        height: 75px;
+    }
+}
+@media screen and (width: 412px){
+    footer {
+        margin-top: 361px;
+    }
+}
