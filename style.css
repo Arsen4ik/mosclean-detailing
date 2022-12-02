@@ -96,7 +96,7 @@ a {
     width: 100%;
     border: 0;
     border-radius: 10px;
-    background-color: rgba(207, 7, 0, 0.9);
+    background-color: rgba(255, 238, 0, 0.8);
     color: rgb(0, 0, 0);
     text-shadow: rgb(250, 250, 5, 0.3) 1px 1px; 
     /* font-family: Andale Mono, monospace; */
@@ -410,9 +410,10 @@ footer {
         justify-content: center;
     }
     .secPict-0 {
-        width: 80%;
+        width: 65%;
         height: 150px;
-        padding: 0;
+        /* padding: 0; */
+        padding-top: 5px;
     }
 
 
@@ -438,6 +439,9 @@ footer {
 @media screen and (width: 280px) {
     .secPict0 {
         margin-top: -20px;
+    }
+    .secPict-0 {
+        height: 130px;
     }
     .company {
         margin-bottom: 25px;
