@@ -29,11 +29,9 @@
 }
 .opt2-prt3 {
     background-image: url(../options/options-pictures/opt2-pictures/0f220e43-b148-41c5-9a67-7f213fd51869.jpeg);
-    /* background-size: contain; */
 }
 .opt2-prt4 {
     background-image: url(../options/options-pictures/opt2-pictures/2d341dc1-53df-40cf-9932-6299e8b9407c.jpeg);   
-    /* background-size: contain;    */
 }
 .opt2-prt5 {
     background-image: url(../options/options-pictures/opt2-pictures/1c133bdc-35e8-4e9a-a3c4-97230273c414.jpeg);   
@@ -52,4 +50,76 @@
 }
 .opt2-prt10 {
     background-image: url(../options/options-pictures/opt2-pictures/f96ddd64-ee96-4057-982b-cafb51689dbf.jpeg);   
+}
+
+/* option3 */
+
+.opt3-prt1 {
+    background-image: url(../options/options-pictures/opt3-pictures/bd6dc7cc-2ac4-4f94-add8-143acb4f8450.jpeg);  
+}
+.opt3-prt2 {
+    background-image: url(../options/options-pictures/opt3-pictures/0ff3e3fa-4e8b-46cb-9751-b614f3e85559.jpeg);
+}
+/* .opt3-prt3 {
+    background-image: url(../options/options-pictures/opt3-pictures/2f3f7713-d390-4e92-9f61-f05580e54f65.jpeg);
+}
+.opt3-prt4 {
+    background-image: url(../options/options-pictures/opt2-pictures/2d341dc1-53df-40cf-9932-6299e8b9407c.jpeg);   
+} */
+.opt3-prt5 {
+    background-image: url(../options/options-pictures/opt3-pictures/f67bf36e-5b3f-438b-9880-2a0a157512d7.jpeg);   
+}
+.opt3-prt6 {
+    background-image: url(../options/options-pictures/opt3-pictures/b5e9b540-71de-47d1-8186-d95f9127d525.jpeg);   
+}
+.opt3-prt7 {
+    background-image: url(../options/options-pictures/opt3-pictures/e1238e4a-bb45-48fe-9881-93ccfb306d6f.jpeg);
+}
+.opt3-prt8 {
+    background-image: url(../options/options-pictures/opt3-pictures/1c92f25f-2a4f-4578-a18f-812599b2cdb8.jpeg);   
+}
+/* .opt3-prt9 {
+    background-image: url(../options/options-pictures/opt3-pictures/d36e8734-262b-4983-bd02-f5cc2eab5d86.jpeg);   
+}
+.opt3-prt10 {
+    background-image: url(../options/options-pictures/opt2-pictures/f96ddd64-ee96-4057-982b-cafb51689dbf.jpeg);   
+} */
+.opt3-prt11 {
+    background-image: url(../options/options-pictures/opt3-pictures/cbb570ea-7c64-4349-aac2-05af4591e42b.jpeg);  
+}
+.opt3-prt12 {
+    background-image: url(../options/options-pictures/opt3-pictures/8bae5964-580e-4338-ba73-48a4d6dde4bb.jpeg);
+}
+.opt3-prt13 {
+    background-image: url(../options/options-pictures/opt3-pictures/c2227771-f68c-40bf-9479-a089e4d5d95c.jpeg);
+}
+.opt3-prt14 {
+    background-image: url(../options/options-pictures/opt3-pictures/616ceab2-3567-40f9-b347-c9aad644c818.jpeg);   
+}
+.opt3-prt15 {
+    background-image: url(../options/options-pictures/opt3-pictures/af840c29-c6ab-48aa-bb5c-9c6382831c92.jpeg);   
+}
+.opt3-prt16 {
+    background-image: url(../options/options-pictures/opt3-pictures/fb854307-fbe4-492f-963d-334d2bbf82cf.jpeg);   
+}
+.opt3-prt17 {
+    background-image: url(../options/options-pictures/opt3-pictures/042b4906-03df-4c04-9aae-d8e5c0bff565.jpeg);
+}
+.opt3-prt18 {
+    background-image: url(../options/options-pictures/opt3-pictures/3936d0e7-8af7-4027-8938-9f9af531298b.jpeg);   
+}
+/* .opt3-prt19 {
+    background-image: url(../options/options-pictures/opt3-pictures/024ab439-e070-444c-a780-89de6cc643c5.jpeg);   
+}
+.opt3-prt20 {
+    background-image: url(../options/options-pictures/opt2-pictures/f96ddd64-ee96-4057-982b-cafb51689dbf.jpeg);    
+} */
+
+/* option5 */
+
+.opt5-prt1 {
+    background-image: url(../options/options-pictures/opt5-pictures/63fb0b2e-06a0-49eb-a30b-d946f68e8663.jpeg);  
+}
+.opt5-prt2 {
+    background-image: url(../options/options-pictures/opt5-pictures/f863b486-f10e-429c-907a-9b26b56a1c9e.jpeg);
 }
