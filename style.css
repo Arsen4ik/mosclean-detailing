@@ -42,6 +42,9 @@ nav {
 ul {
     margin: 0;
 }
+ul li {
+    min-width: 24px;
+}
 a {
     color: inherit;
     text-decoration: none;
@@ -93,6 +96,10 @@ a {
     font-weight: bold;
     letter-spacing: 3px;
     text-shadow: 2px 2px rgb(82, 82, 82);
+}
+.MI-text1-2 {
+    color: rgb(82, 82, 82);
+    text-shadow: 2px 2px rgb(255, 255, 255);
 }
 .MI-text2 {
     width: 80%;
@@ -273,8 +280,8 @@ footer {
 
 }
 
-.F:hover {
-    color:rgb(101, 136, 243)
+footer p:last-child:hover {
+    color:rgb(240, 42, 42)
 }
 
 .foot-num-1 {
