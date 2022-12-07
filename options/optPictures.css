@@ -115,6 +115,19 @@
     background-image: url(../options/options-pictures/opt2-pictures/f96ddd64-ee96-4057-982b-cafb51689dbf.jpeg);    
 } */
 
+/* option4 */
+
+.opt4-prt1 {
+    background-image: url(../options/options-pictures/opt4-pictures/2777984d-f65e-41e7-a907-e7751959a564.jpeg);  
+}
+.opt4-prt2 {
+    background-image: url(../options/options-pictures/opt4-pictures/2e36aec3-ba18-4276-b2d4-62472cfece73.jpeg);
+} 
+.opt4-prt3 {
+    background-image: url(../options/options-pictures/opt4-pictures/61e08fc0-44aa-4a1a-bead-8007107c0071.jpeg);  
+}
+
+
 /* option5 */
 
 .opt5-prt1 {
@@ -122,4 +135,4 @@
 }
 .opt5-prt2 {
     background-image: url(../options/options-pictures/opt5-pictures/f863b486-f10e-429c-907a-9b26b56a1c9e.jpeg);
-}
+} 
