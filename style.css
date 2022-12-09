@@ -43,7 +43,7 @@ nav {
 }
 ul {
     margin: 0;
-}
+} 
 ul li {
     min-width: 24px;
 }
@@ -51,6 +51,11 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+header a:active {
+    color: crimson;
+}
+
 .menu {
     list-style-type: none;
     display: flex;
