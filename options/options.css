@@ -7,8 +7,28 @@
     color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
+    flex-direction: column;
     font-size: x-large;
     text-shadow: black 2px 2px;
+    margin-bottom: 50px;
+    padding: 0 20px;
+}
+
+.zaglav>ul {
+    width: 70%;
+}
+
+.zaglav>p:first-child {
+    text-align: center;
+}
+.zaglav>p:first-child:after {
+    content: "";
+    display: block;
+    width: 90%;
+    height: 1px;
+    background-color: whitesmoke;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .primers {
@@ -20,6 +40,14 @@
     padding: 20px 0;
     gap: 5px;
 }
+
+.primers>p {
+    font-size: xx-large;
+    color: rgb(71, 71, 71);
+    text-shadow: rgb(156, 156, 156) 1px 1px;
+    padding-left: 15px;
+}
+
 .primer {
     /* background-color: rgb(236, 236, 236); */
     display: flex;
@@ -36,6 +64,7 @@
     border-left: 10px rgb(71, 71, 71) solid;
     border-right: 10px rgb(71, 71, 71) solid;
     border-radius: 10px;
+    border-width: 8px;
     gap: 5px;
 }
 
@@ -88,12 +117,26 @@
 @media screen and (max-width: 540px){
     .primer {
         height: 100px;
+        width: 200px;
+        border-width: 5px;
     }
-    .zaglav p {
-        font-size: 13px;
+    .pict {
+        width: 90%;
+    }
+    .zaglav {
+        font-size: 10px;
     }
     footer {
         margin-top: 76px;
+    }
+    .zaglav {
+        margin-bottom: 10px;
+    }
+    .primers>p {
+        font-size: small;
+    }
+    header ul{
+        padding-left: 0;
     }
 }
 
@@ -109,7 +152,7 @@
 }
 @media screen and (width: 390px){
     footer {
-        margin-top: 290px;
+        margin-top: 248px;
     }
 }
 @media screen and (width: 393px){

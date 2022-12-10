@@ -445,6 +445,9 @@ footer p:last-child:hover {
         padding-top: 5px;
     }
 
+    header div, a {
+        font-size: 8px;
+    }
 
     footer {
         margin-top: 20px;
