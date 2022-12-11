@@ -135,4 +135,23 @@ section div div {
     section {
         padding: 20px 0;
     }
+    section div {
+        width: 120px;
+        height: 120px;
+    }
+    section div div {
+        width: 60px;
+        height: 60px;
+    }
+    section div p {
+        font-size: medium;
+    }
+    section>a:nth-child(2)>div {
+        background-size: contain;
+        box-sizing: border-box;
+    }
+    section>a:nth-child(2)>div>div {
+        height: 60px;
+        width: 100px;
+    }
 }
