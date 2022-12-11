@@ -1,0 +1,150 @@
+* {
+  font-family: Kelly Slab;
+}
+
+body {
+  background-color: #cacaca;
+  margin: 0;
+}
+
+header {
+  height: 40px;
+  width: 100%;
+  background-color: #c2c2c2;
+}
+
+header:after {
+  content: "";
+  width: 80%;
+  height: 1px;
+  background-color: #303030;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: relative;
+}
+
+.logo0 {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  background-image: url("../tire-svgrepo-com.4c9c9f9c.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+nav {
+  height: 100%;
+  color: #303030;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 0 30px;
+  font-family: inherit;
+  text-decoration: none;
+  display: flex;
+}
+
+ul {
+  margin: 0;
+}
+
+ul li {
+  min-width: 24px;
+}
+
+.menu {
+  flex-direction: row;
+  gap: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  list-style-type: none;
+  display: flex;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+section {
+  width: 100%;
+  letter-spacing: 3px;
+  background-image: linear-gradient(#c2c2c2, #fff, #cacaca);
+  flex-flow: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 0;
+  display: flex;
+}
+
+section div {
+  width: 200px;
+  height: 200px;
+  background-color: #0003;
+  border-radius: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+section > a > div:hover {
+  transition: transform 1s;
+  transform: scale(1.1);
+}
+
+section div p {
+  color: #303030;
+  font-size: x-large;
+}
+
+section div div {
+  width: 100px;
+  height: 100px;
+  background-color: #0000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2px;
+}
+
+.img1 {
+  background-image: url("../phone-solid.38a424e7.svg");
+}
+
+.img2 {
+  background-image: url("../youtube.d76cfc4f.svg");
+  background-size: 100px;
+}
+
+.img3 {
+  background-image: url("../instagram.7896bf76.svg");
+}
+
+.img4 {
+  background-image: url("../envelope-solid.627b930c.svg");
+}
+
+.conVal3:hover:after {
+  content: "включен VPN?";
+  color: #dc143c;
+  text-align: center;
+  font-size: medium;
+}
+
+@media screen and (max-width: 540px) {
+  section {
+    padding: 20px 0;
+  }
+}
+
+/*# sourceMappingURL=contact.7d7c5fb0.css.map */

@@ -20,6 +20,7 @@
 
 .zaglav>p:first-child {
     text-align: center;
+    font-size: xx-large;
 }
 .zaglav>p:first-child:after {
     content: "";
@@ -88,6 +89,12 @@
     text-shadow: 2px 2px rgb(82, 82, 82);
 }
 
+/* footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+} */
+
 
 @media screen and (min-width: 539px) and (max-width: 992px) {
     .primer {
@@ -98,12 +105,12 @@
     }
 }
 
-@media screen and (width: 820px) {
+@media screen and (width: 820px) and (width: 768px) and (width: 912px) {
     footer {
         margin-top: 283px;
     }
-}
-@media screen and (width: 768px) {
+} 
+/* @media screen and (width: 768px) {
     footer {
         margin-top: 127px;
     }
@@ -113,7 +120,7 @@
         margin-top: 471px;
     }
 }
-
+*/
 @media screen and (max-width: 540px){
     .primer {
         height: 100px;
@@ -125,12 +132,13 @@
     }
     .zaglav {
         font-size: 10px;
+        margin-bottom: 10px;
     }
     footer {
         margin-top: 76px;
-    }
-    .zaglav {
-        margin-bottom: 10px;
+    } 
+    .zaglav>p:first-child {
+        font-size: small;
     }
     .primers>p {
         font-size: small;
@@ -140,7 +148,7 @@
     }
 }
 
-@media screen and (width: 414px){
+ /* @media screen and (width: 414px){
     footer {
         margin-top: 342px;
     }
@@ -169,17 +177,19 @@
     footer {
         margin-top: 361px;
     }
-}
+}  */
 @media screen and (width: 280px){
-    footer {
+    /* footer {
         margin-top: 174px;
-    }
+    } */
     .primer {
         height: 75px;
     }
 }
-@media screen and (width: 412px){
+/* @media screen and (width: 412px) or (width: 360px) or (width: 393px) or (width: 390px) or (width: 375px) or (width: 414px) {
     footer {
-        margin-top: 361px;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
     }
-}
+} */

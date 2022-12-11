@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../options/options.css">
     <link rel="stylesheet" href="../options/optPictures.css">
+    <link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg">
+    <link rel="icon" type="image/png" href="../favicon/favicon.png">
     <style>
         .primer {
             width: 50%;
@@ -21,12 +23,19 @@
         .logo {
             background-image: url(../logo/house-solid.svg);
         }
+        @media screen and (max-width: 540px){
+            footer {
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+            }
+        }
     </style>
 </head>
 <body>
     <header> 
         <nav>
-            <a href="../index.html" class="logo0"><div class="logo"></div><div>ДОМОЙ</div></a>
+            <a href="../index.html" class="logo0"><div class="logo"></div></a>
             <ul class="menu">
                 <li><a href="../Main-links/contact.html">СВЯЗАТЬСЯ С НАМИ</a></li>
                 <li><a href="../Main-links/about.html">О НАС</a></li>

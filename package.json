@@ -1,0 +1,23 @@
+{
+  "name": "mosclean-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arsen4ik/D.D.Project2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arsen4ik/D.D.Project2/issues"
+  },
+  "homepage": "https://github.com/Arsen4ik/D.D.Project2#readme",
+  "devDependencies": {
+    "parcel": "^2.8.1"
+  }
+}

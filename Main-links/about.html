@@ -9,21 +9,90 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Ruslan+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg">
+    <link rel="icon" type="image/png" href="../favicon/favicon.png">
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="../script.js" defer></script>
     <style>
         .AboutUs {
             color: gold;
         }
+        .zaglav {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: x-large;
+    text-shadow: black 2px 2px;
+    margin-bottom: 50px;
+    padding: 0 20px;
+}
+
+.zaglav>ul {
+    width: 70%;
+}
+
+.zaglav>p:first-child {
+    text-align: center;
+    font-size: xx-large;
+}
+.zaglav>p:first-child:after {
+    content: "";
+    display: block;
+    width: 90%;
+    height: 1px;
+    background-color: whitesmoke;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+a>.logo {
+    background-image: url(../logo/house-solid.svg);
+}
+
+@media screen and (max-width: 540px) {
+    .zaglav>p:first-child {
+        font-size: medium;
+    }
+}
     </style>
 </head>
 <body>
     <header>
         <nav>
-            <a href="../index.html" class="logo0"><div class="logo"></div><div>ДОМОЙ</div></a>
+            <a href="../index.html" class="logo0"><div class="logo"></div></a>
             <ul class="menu">
                 <li><a href="../Main-links/contact.html">СВЯЗАТЬСЯ С НАМИ</a></li>
                 <li class="AboutUs"><a href="../Main-links/about.html">О НАС</a></li>
             </ul>
         </nav>
     </header>
+    <div class="zaglav">
+        <p>О MOSCLEAN DETAILING</p>
+        <p>
+            Мы предлагаем комплексные услуги по улучшению внешнего вида автомобиля и его защите. 
+            У нас большой опыт в сфере детейлинг-услуг, индивидуальный подход к каждому клиенту, 
+            проводят работу быстро и качественно, с полным соблюдением рекомендованной технологии. 
+            Мы сэкономим Ваше время и деньги при обращении к нам за услугами исправления повреждений кузова автомобиля, 
+            сделаем максимум для получения желаемого результата. Заявки принимаем по телефону или в социальных сетях. 
+            Работаем без выходных. У нас:
+            <ul>
+                <li>Специализированное оборудование</li>
+                <li>Опытные мастера</li>
+                <li>Качественные материалы</li>
+                <li>Комплексное предоставление услуг, гарантия</li>
+            </ul> </p>
+    </div>
+    <footer>
+        <div id="copi">
+        &copy;MOSCLEAN DETAILING {{ date }}
+        </div>
+    </footer>
 </body>
 </html>
