@@ -1,4 +1,12 @@
-.opt1-prt1, .opt1-prt2, .opt1-prt3, .opt1-prt4, .opt1-prt5, .opt1-prt6, .opt2-prt1, .opt2-prt2 {
+.opt1-prt1, .opt1-prt2, .opt1-prt3, .opt1-prt4, .opt1-prt5, .opt1-prt6 {
+  background-image: url("../d4d364a1-017d-499c-8b6d-29300fd030a6.8c00cd4a.jpeg");
+}
+
+.opt2-prt1 {
+  background-image: url("../64713093-0812-4845-b8cf-fd00e26033fe.08a51b29.jpeg");
+}
+
+.opt2-prt2 {
   background-image: url("../d4d364a1-017d-499c-8b6d-29300fd030a6.8c00cd4a.jpeg");
 }
 

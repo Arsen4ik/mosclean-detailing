@@ -3,14 +3,14 @@
 }
 
 body {
-  background-color: #cacaca;
+  background-color: #d8d8d8;
   margin: 0;
 }
 
 header {
   height: 40px;
   width: 100%;
-  background-color: #c2c2c2;
+  background-color: #afafaf;
 }
 
 header:after {
@@ -77,7 +77,7 @@ a {
 section {
   width: 100%;
   letter-spacing: 3px;
-  background-image: linear-gradient(#c2c2c2, #fff, #cacaca);
+  background-image: linear-gradient(#afafaf, #fff, #d8d8d8);
   flex-flow: wrap;
   justify-content: space-evenly;
   align-items: center;
@@ -89,7 +89,7 @@ section {
 section div {
   width: 200px;
   height: 200px;
-  background-color: #0003;
+  background-color: #0000001a;
   border-radius: 5px;
   flex-direction: column;
   justify-content: center;
@@ -143,7 +143,50 @@ section div div {
 
 @media screen and (max-width: 540px) {
   section {
-    padding: 20px 0;
+    width: 100vw;
+    height: 40vh;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, auto);
+    place-content: center;
+    gap: 15px;
+    padding: 10px 0;
+    display: grid;
+  }
+
+  section div {
+    width: 120px;
+    height: 120px;
+  }
+
+  section div div {
+    width: 60px;
+    height: 60px;
+  }
+
+  section div p {
+    font-size: medium;
+  }
+
+  section > a:nth-child(2) > div {
+    box-sizing: border-box;
+    background-size: contain;
+  }
+
+  .img2 {
+    background-size: 70px;
+  }
+
+  section > a:nth-child(2) > div > div {
+    height: 60px;
+    width: 100px;
+  }
+
+  .menu {
+    padding: 0;
+  }
+
+  .logo0 > div, .menu > li {
+    font-size: x-small;
   }
 }
 

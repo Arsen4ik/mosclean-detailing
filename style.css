@@ -106,29 +106,41 @@ header a:active {
 }
 .MI-text1-2 {
     color: rgb(82, 82, 82);
-    text-shadow: 2px 2px rgb(255, 255, 255);
+    text-shadow: -1px -1px rgb(255, 255, 255);
 }
 .MI-text2 {
     width: 80%;
     height: 50px;
     border: 0;
     border-radius: 10px;
-    background-color: rgba(255, 217, 0, 0.9);
+    /* background-color: rgba(255, 217, 0, 0.9); */
+    background-color: whitesmoke;
     color: rgb(0, 0, 0);
-    text-shadow: rgb(250, 250, 5, 0.3) 1px 1px; 
-    /* font-family: Andale Mono, monospace; */
-    font-weight: bold;
-    font-size: x-large;
+    box-shadow: 0 0 25px 0 rgba(255, 255, 255, 0.9);
+    /* text-shadow: rgba(250, 5, 5, 0.3) 1px 1px;  */
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: all .25s ease-in-out;
 }
-/* .MI-text2:active {
-    background-color: rgb(250, 58, 24);
-} */
+
+
+.MI-text2 p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: large;
+}
+
 .MI-text2:hover {
-    background-color: rgb(0, 0, 0, 0.9);
-    color: rgb(170, 22, 22);
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgb(0, 0, 0);
+    /* box-shadow: 20px 20px rgba(204, 173, 0), -20px -20px rgba(204, 173, 0); */
+    box-shadow: 0px 1px 2px 0px rgba(255, 255, 255, 0.7),
+            1px 2px 4px 0px rgba(255, 255, 255, 0.7),
+            2px 4px 8px 0px rgba(255, 255, 255, 0.7),
+            2px 4px 16px 0px rgba(255, 255, 255, 0.7);
+    text-shadow: .5px .5px whitesmoke;
 }
 .MI-text2:active {
     background-color: rgb(170, 22, 22);
@@ -136,16 +148,17 @@ header a:active {
 }
 
 .secPict0 {
-    background-color: rgb(71, 71, 71);
+    background-color: rgb(110, 110, 110);
     color: white;
     display: flex;
     justify-content: center;
 }
 .secPict0-p {
-    font-size: x-large;
-    /* font-family: Andale Mono, monospace; */
+    /* font-size: x-large;
+    font-family: Andale Mono, monospace; 
     font-family: 'Kelly Slab', cursive;
-    /* font-family: 'Ruslan Display', cursive; */
+    font-family: 'Ruslan Display', cursive; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     margin-left: 5%;
 }
@@ -173,7 +186,7 @@ header a:active {
     width: calc(33% - 42px);
     height: 280px;
     background-repeat: no-repeat;
-    background-color: rgb(71, 71, 71);
+    background-color: rgb(110, 110, 110);
     border-radius: 10px;
     margin: 7px;
     padding: 5px 0; 
@@ -185,8 +198,8 @@ header a:active {
 }
 .secPict-0:hover {
     transform: scale(1.05);
-    transition: transform 3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
     background-color: rgb(34, 34, 34);
+    transition: all .5s ease-in-out;
 }
 
 .part1 {
@@ -213,6 +226,8 @@ header a:active {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* .secPict1 {
@@ -335,7 +350,11 @@ footer p:last-child:hover {
         font-size: 30px;
     }
     .MI-text2 {
-        font-size: 10px;
+        width: 100%;
+        height: 30px;
+    }
+    .MI-text2 p {
+        font-size: 15px;
     }
     footer {
         margin-top: 150px;
@@ -432,7 +451,11 @@ footer p:last-child:hover {
         font-size: 20px;
     }
     .MI-text2 {
-        height: 30px;
+        height: 20px;
+        border-radius: 5px;
+    }
+    .MI-text2 p {
+        font-size: 10px;
     }
     .secPict {
         display: flex;
@@ -478,9 +501,12 @@ footer p:last-child:hover {
     .company {
         margin-bottom: 25px;
     }
-    .MI-text2 {
-        font-size: 10px;
+    /* .MI-text2 {
+        height: 15px;
     }
+    .MI-text2 p {
+        font-size: 10px;
+    } */
     .foot-num-1 {
         font-size: 8px;
     }
