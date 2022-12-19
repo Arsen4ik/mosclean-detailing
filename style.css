@@ -134,13 +134,13 @@ header a:active {
 
 .MI-text2:hover {
     background-color: rgba(0, 0, 0, 0.1);
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     /* box-shadow: 20px 20px rgba(204, 173, 0), -20px -20px rgba(204, 173, 0); */
     box-shadow: 0px 1px 2px 0px rgba(255, 255, 255, 0.7),
             1px 2px 4px 0px rgba(255, 255, 255, 0.7),
             2px 4px 8px 0px rgba(255, 255, 255, 0.7),
             2px 4px 16px 0px rgba(255, 255, 255, 0.7);
-    text-shadow: .5px .5px whitesmoke;
+    /* text-shadow: .5px .5px whitesmoke; */
 }
 .MI-text2:active {
     background-color: rgb(170, 22, 22);
@@ -148,10 +148,12 @@ header a:active {
 }
 
 .secPict0 {
-    background-color: rgb(110, 110, 110);
-    color: white;
+    height: 20vh;
+    background-color: white;
+    color: rgb(63, 63, 63);
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .secPict0-p {
     /* font-size: x-large;
@@ -160,33 +162,30 @@ header a:active {
     font-family: 'Ruslan Display', cursive; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
-    margin-left: 5%;
+    font-size: xx-large;
 }
 
 
 .secPict {
     width: 100%;
     height: auto;
-    background-color: rgb(255, 255, 255);
-    display: flex;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+    align-content: center;
     justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
     padding: 2% 0;
-    margin-left: auto;
-    margin-right: auto;
+    gap: 30px;
 }
-/* .secPict div {
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', serif;
-    font-weight: 700;
-    color: white;
-} */
 .secPict-0 {
-    width: calc(33% - 42px);
+    /* width: calc(33% - 42px); */
+    width: 300px;
     height: 280px;
     background-repeat: no-repeat;
-    background-color: rgb(110, 110, 110);
+    background-color: whitesmoke;
     border-radius: 10px;
     margin: 7px;
     padding: 5px 0; 
@@ -195,11 +194,17 @@ header a:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    box-shadow: 0px 1px 2px 0px rgba(88, 88, 88, 0.7);
 }
 .secPict-0:hover {
     transform: scale(1.05);
-    background-color: rgb(34, 34, 34);
+    background-color: dimgray;
     transition: all .5s ease-in-out;
+    box-shadow: 0px 1px 2px 0px rgba(255, 0, 0, 0.7);
+}
+.secPict-0:hover>.part2 {
+    color: whitesmoke;
 }
 
 .part1 {
@@ -219,14 +224,13 @@ header a:active {
     background-size: cover;
 }
 .part2 {
-    color: white;
+    color: rgb(63, 63, 63);
     font-size: large;
     width: 90%;
     height: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
-
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -338,12 +342,12 @@ footer p:last-child:hover {
     }
     .secPict {
         margin-bottom: 10px;
-        display: flex;
-        justify-content: space-around;
+        /* display: flex;
+        justify-content: space-around; */
     }
     .secPict-0 {
-        width: 300px;
-        height: 220px;
+        width: 250px;
+        height: 200px;
         padding: 0;
     }
     .MI-text1 {
@@ -384,8 +388,8 @@ footer p:last-child:hover {
     }
     .secPict {
         margin-bottom: 10px;
-        display: flex;
-        justify-content: space-around;
+        /* display: flex;
+        justify-content: space-around; */
     }
     .secPict-0 {
         width: 200px;
@@ -442,7 +446,7 @@ footer p:last-child:hover {
         font-size: 10px;
     }
     .secPict0-p {
-        font-size: 10px;
+        font-size: small;
     }
     .mainImg {
         height: 150px;
@@ -460,12 +464,16 @@ footer p:last-child:hover {
     .secPict {
         display: flex;
         justify-content: center;
+        flex-direction: column;
+        gap: 10px;
     }
     .secPict-0 {
-        width: 65%;
+        width: 55%;
         height: 150px;
         /* padding: 0; */
         padding-top: 5px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     header div, a {
@@ -494,6 +502,9 @@ footer p:last-child:hover {
 @media screen and (width: 280px) {
     .secPict0 {
         margin-top: -20px;
+    }
+    .secPict0-p {
+        font-size: x-small;
     }
     .secPict-0 {
         height: 130px;

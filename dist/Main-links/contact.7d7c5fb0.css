@@ -10,7 +10,7 @@ body {
 header {
   height: 40px;
   width: 100%;
-  background-color: #afafaf;
+  background-color: #bdbdbd;
 }
 
 header:after {
@@ -77,7 +77,7 @@ a {
 section {
   width: 100%;
   letter-spacing: 3px;
-  background-image: linear-gradient(#afafaf, #fff, #d8d8d8);
+  background-image: linear-gradient(#bdbdbd, #fff, #d8d8d8);
   flex-flow: wrap;
   justify-content: space-evenly;
   align-items: center;
@@ -86,7 +86,7 @@ section {
   display: flex;
 }
 
-section div {
+section > a > div {
   width: 200px;
   height: 200px;
   background-color: #0000001a;
@@ -95,6 +95,7 @@ section div {
   justify-content: center;
   align-items: center;
   display: flex;
+  box-shadow: 0 1px 2px #585858b3;
 }
 
 section > a > div:hover {
@@ -141,6 +142,29 @@ section div div {
   font-size: medium;
 }
 
+@media screen and (min-width: 541px) and (max-width: 992px) {
+  section {
+    width: 100vw;
+    height: 60vh;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, auto);
+    place-content: center;
+    gap: 25px;
+    padding: 10px 0;
+    display: grid;
+  }
+
+  section div {
+    width: 250px;
+    height: 250px;
+  }
+
+  section div div {
+    width: 100px;
+    height: 100px;
+  }
+}
+
 @media screen and (max-width: 540px) {
   section {
     width: 100vw;
@@ -153,7 +177,7 @@ section div div {
     display: grid;
   }
 
-  section div {
+  section > a > div {
     width: 120px;
     height: 120px;
   }
