@@ -1,6 +1,7 @@
 * {
-    font-family: 'Kelly Slab';
     /* font-family: 'Ruslan Display'; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
 }
 
 body {
@@ -100,6 +101,7 @@ header a:active {
     font-size: 50px;
     margin: 0;
     /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: 'Kelly Slab';
     font-weight: bold;
     letter-spacing: 3px;
     text-shadow: 2px 2px rgb(82, 82, 82);
@@ -121,7 +123,7 @@ header a:active {
     display: flex;
     justify-content: center;
     align-items: center;
-
+ 
     transition: all .25s ease-in-out;
 }
 
@@ -182,27 +184,36 @@ header a:active {
 }
 .secPict-0 {
     /* width: calc(33% - 42px); */
-    width: 300px;
-    height: 280px;
+    /* padding-top: 50px; */
+    width: 400px;
+    height: 380px;
     background-repeat: no-repeat;
     background-color: whitesmoke;
     border-radius: 10px;
     margin: 7px;
-    padding: 5px 0; 
+    padding: 15px 0; 
+    box-shadow: 0px 1px 2px 0px rgba(88, 88, 88, 0.7);
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    box-shadow: 0px 1px 2px 0px rgba(88, 88, 88, 0.7);
+    transition: all .5s ease-in-out;
+
 }
 .secPict-0:hover {
     transform: scale(1.05);
-    background-color: dimgray;
-    transition: all .5s ease-in-out;
-    box-shadow: 0px 1px 2px 0px rgba(255, 0, 0, 0.7);
+    background-color: rgb(63, 63, 63); 
+    box-shadow: 2px 4px 5px 2px rgba(128, 128, 128, 0.7);
 }
+
+.secPict-0:hover>.part1 {
+    /* transition: all .5s ease-in-out;
+    transform: scale(1.2); */
+    opacity: 0.7;
+}
+
 .secPict-0:hover>.part2 {
     color: whitesmoke;
 }
@@ -225,6 +236,8 @@ header a:active {
 }
 .part2 {
     color: rgb(63, 63, 63);
+    padding-top: 10px;
+    margin: 0;
     font-size: large;
     width: 90%;
     height: 10%;
@@ -300,6 +313,10 @@ footer {
     flex-direction: column;
 }
 
+#copi {
+    font-family: 'Kelly Slab';
+}
+
 .foot-num {
     max-height: 50px;
 }
@@ -347,7 +364,7 @@ footer p:last-child:hover {
     }
     .secPict-0 {
         width: 250px;
-        height: 200px;
+        height: 240px;
         padding: 0;
     }
     .MI-text1 {
@@ -377,7 +394,9 @@ footer p:last-child:hover {
         font-size: 17px;
     }
     .part2 {
+        padding: 10px 0;
         font-size: 20px;
+        height: 50px;
     }
 }
 
@@ -442,8 +461,12 @@ footer p:last-child:hover {
 
 
 @media screen and (max-width: 538px) {
-    * {
+    /* * {
         font-size: 10px;
+    } */
+    
+    .secPict0 {
+        height: 100px;
     }
     .secPict0-p {
         font-size: small;
@@ -476,8 +499,8 @@ footer p:last-child:hover {
         margin-right: auto;
     }
 
-    header div, a {
-        font-size: 8px;
+    header a {
+        font-size: small;
     }
 
     footer {

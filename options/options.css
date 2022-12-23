@@ -3,13 +3,16 @@
     /* font-family: 'Ruslan Display'; */
 }
 
+header a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .zaglav {
     color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     flex-direction: column;
     font-size: x-large;
-    text-shadow: black 1px 1px;
     margin-bottom: 50px;
     padding: 0 20px;
 }
@@ -55,7 +58,6 @@
 }
 
 .primer {
-    /* background-color: rgb(236, 236, 236); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,7 +68,6 @@
     margin-left: auto; 
     margin-right: auto;
     font-size: xx-large; 
-    /* border-radius: 10px; */
     border-left: 10px rgb(71, 71, 71) solid;
     border-right: 10px rgb(71, 71, 71) solid;
     border-radius: 10px;
@@ -94,12 +95,6 @@
     text-shadow: 2px 2px rgb(82, 82, 82);
 }
 
-/* footer {
-    position: relative;
-    width: 100%;
-    bottom: 0;
-} */
-
 
 @media screen and (min-width: 539px) and (max-width: 992px) {
     .primer {
@@ -115,18 +110,10 @@
         margin-top: 283px;
     }
 } 
-/* @media screen and (width: 768px) {
-    footer {
-        margin-top: 127px;
-    }
-}
-@media screen and (width: 912px) {
-    footer {
-        margin-top: 471px;
-    }
-}
-*/
 @media screen and (max-width: 540px){
+    header a {
+        font-size: small;
+    }
     .primer {
         height: 100px;
         width: 200px;
@@ -143,58 +130,21 @@
         margin-top: 76px;
     } 
     .zaglav>p:first-child {
-        font-size: small;
+        font-size: x-large;
+    }
+    .zaglav>p:last-child {
+        font-size: large;
     }
     .primers>p {
-        font-size: small;
+        font-size: large;
     }
     header ul{
         padding-left: 0;
     }
 }
 
- /* @media screen and (width: 414px){
-    footer {
-        margin-top: 342px;
-    }
-}
-@media screen and (width: 375px){
-    footer {
-        margin-top: 113px;
-    }
-}
-@media screen and (width: 390px){
-    footer {
-        margin-top: 248px;
-    }
-}
-@media screen and (width: 393px){
-    footer {
-        margin-top: 297px;
-    }
-}
-@media screen and (width: 360px){
-    footer {
-        margin-top: 186px;
-    }
-}
-@media screen and (width: 412px){
-    footer {
-        margin-top: 361px;
-    }
-}  */
 @media screen and (width: 280px){
-    /* footer {
-        margin-top: 174px;
-    } */
     .primer {
         height: 75px;
     }
 }
-/* @media screen and (width: 412px) or (width: 360px) or (width: 393px) or (width: 390px) or (width: 375px) or (width: 414px) {
-    footer {
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-    }
-} */
