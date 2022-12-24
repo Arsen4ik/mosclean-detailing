@@ -17,13 +17,18 @@
         .AboutUs {
             color: gold;
         }
+
+        body {
+            background-image: linear-gradient(to right, rgb(165, 70, 26),rgb(218, 59, 31) , rgb(173, 41, 17));
+        }
+
         .zaglav {
     color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     flex-direction: column;
     font-size: x-large;
-    text-shadow: black 1px 1px;
+    /* text-shadow: black 1px 1px; */
     margin-bottom: 50px;
     padding: 0 20px;
 }
@@ -71,6 +76,10 @@ a>.logo {
     .zaglav>p:first-child {
         font-size: medium;
     }
+    footer {
+        font-size: small;
+        position: static;
+    }
 }
     </style>
 </head>
@@ -102,6 +111,17 @@ a>.logo {
         </p>
     </div>
     <footer>
+        <section>
+            <a href="tel:+7917515-55-15">
+                <div class="img1"></div>
+            </a><a href="https://www.youtube.com/" target="_blank">
+                <div class="img2"></div>
+            </a><a href="https://www.instagram.com/" target="_blank">
+                <div class="img3"></div>
+            </a><a href="mailto: aaaa@google.com" target="_blank">
+                <div class="img4"></div>
+            </a>
+        </section>
         <div id="copi">
         &copy;MOSCLEAN DETAILING {{ date }}
         </div>

@@ -3,6 +3,10 @@
     /* font-family: 'Ruslan Display'; */
 }
 
+body {
+    background-image: linear-gradient(to right, rgb(179, 24, 24),rgb(199, 33, 33) , rgb(143, 47, 23));
+}
+
 header a {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -128,6 +132,7 @@ header a {
     }
     footer {
         margin-top: 76px;
+        font-size: small;
     } 
     .zaglav>p:first-child {
         font-size: x-large;
@@ -146,5 +151,8 @@ header a {
 @media screen and (width: 280px){
     .primer {
         height: 75px;
+    }
+    header a {
+        font-size: xx-small;
     }
 }
