@@ -2,9 +2,16 @@
   font-family: Kelly Slab;
 }
 
+body {
+  background-image: linear-gradient(to right, #b31818, #c72121, #8f2f17);
+}
+
+header a {
+  font-family: Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif;
+}
+
 .zaglav {
   color: #fff;
-  text-shadow: 1px 1px #000;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 50px;
@@ -111,6 +118,10 @@
 }
 
 @media screen and (max-width: 540px) {
+  header a {
+    font-size: small;
+  }
+
   .primer {
     height: 100px;
     width: 200px;
@@ -128,10 +139,15 @@
 
   footer {
     margin-top: 76px;
+    font-size: small;
   }
 
-  .zaglav > p:first-child, .primers > p {
-    font-size: small;
+  .zaglav > p:first-child {
+    font-size: x-large;
+  }
+
+  .zaglav > p:last-child, .primers > p {
+    font-size: large;
   }
 
   header ul {
@@ -142,6 +158,14 @@
 @media screen and (width: 280px) {
   .primer {
     height: 75px;
+  }
+
+  .zaglav P:first-child {
+    font-size: medium;
+  }
+
+  header a {
+    font-size: xx-small;
   }
 }
 

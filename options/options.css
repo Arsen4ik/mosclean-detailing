@@ -152,6 +152,9 @@ header a {
     .primer {
         height: 75px;
     }
+    .zaglav P:first-child{
+        font-size: medium;
+    }
     header a {
         font-size: xx-small;
     }

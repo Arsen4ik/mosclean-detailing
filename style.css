@@ -340,16 +340,16 @@ footer section div:hover {
 }
 
 footer section .img1 {
-    background-image: url(Main-links/contact-pictures/phone-solid.svg);
+    background-image: url(Main-links/contact-pictures/phone-call-telephone-svgrepo-com.svg);
 }
 footer section .img2 {
-    background-image: url(Main-links/contact-pictures/youtube.svg);
+    background-image: url(Main-links/contact-pictures/youtube-icon-svgrepo-com.svg);
 }
 footer section .img3 {
-    background-image: url(Main-links/contact-pictures/instagram.svg);
+    background-image: url(Main-links/contact-pictures/instagram-svgrepo-com.svg);
 }
 footer section .img4 {
-    background-image: url(Main-links/contact-pictures/envelope-solid.svg);
+    background-image: url(Main-links/contact-pictures/email-svgrepo-com.svg);
 }
 
 
@@ -525,7 +525,8 @@ footer p:last-child:hover {
         font-size: 20px;
     }
     .MI-text2 {
-        height: 20px;
+        width: 100%;
+        height: 30px;
         border-radius: 5px;
     }
     .MI-text2 p {
