@@ -148,8 +148,8 @@ header a:active {
 }
 
 .secPict0 {
-  height: 20vh;
-  color: #3f3f3f;
+  height: 15vh;
+  color: #8d112a;
   background-color: #fff;
   justify-content: center;
   align-items: center;
@@ -165,54 +165,43 @@ header a:active {
 .secPict {
   width: 100%;
   height: auto;
+  box-sizing: border-box;
   background-color: #fff;
   grid-template-rows: repeat(2, auto);
-  grid-template-columns: repeat(2, auto);
-  place-content: center;
-  gap: 30px;
-  padding: 2% 0;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
   display: grid;
 }
 
+.secPict > .option:last-child {
+  grid-column: 1 / 5;
+}
+
 .secPict-0 {
-  width: 500px;
-  height: 380px;
-  background-color: #f5f5f5;
+  height: 120px;
   background-repeat: no-repeat;
-  border-radius: 10px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 7px;
-  padding: 15px 0;
+  gap: 10px;
+  padding: 15px 5px;
   transition: all .5s ease-in-out;
   display: flex;
-  box-shadow: 0 1px 2px #585858b3;
 }
 
 .secPict-0:hover {
-  background-color: #fff;
-  transform: scale(1.05);
-  box-shadow: 2px 4px 5px 2px #808080b3;
+  background-color: #e7e7e7;
 }
 
-.secPict-0:hover > .part1 {
-  opacity: .8;
-}
-
-.part1 {
-  width: 90%;
-  height: 90%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 3px;
+.secPict-0:hover > p {
+  color: #000;
 }
 
 .part2 {
   color: #3f3f3f;
   width: 90%;
   height: 10%;
+  text-align: center;
   justify-content: center;
   align-items: center;
   margin: 0;
@@ -222,20 +211,95 @@ header a:active {
   display: flex;
 }
 
-.secPict2 {
-  background-image: url("d4d364a1-017d-499c-8b6d-29300fd030a6.fb4c073f.jpeg");
+.zaglav {
+  width: 100%;
+  color: #3f3f3f;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  font-size: x-large;
+  display: flex;
 }
 
-.secPict3 {
-  background-image: url("2b214dd6-7e57-4bbc-bb9e-568058446622.29c24c04.jpeg");
+.zaglav > p:nth-child(2) {
+  font-family: Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif;
 }
 
-.secPict4 {
-  background-image: url("2e36aec3-ba18-4276-b2d4-62472cfece73.ad786160.jpeg");
+.zaglav > ul {
+  width: 100%;
 }
 
-.secPict5 {
-  background-image: url("f863b486-f10e-429c-907a-9b26b56a1c9e.21c07da1.jpeg");
+.zaglav > p:first-child {
+  text-align: center;
+  font-size: xx-large;
+}
+
+.zaglav > p:first-child:after {
+  content: "";
+  width: 90%;
+  height: 1px;
+  background-color: #474747;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.primers {
+  height: auto;
+  background-color: #fff;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px 0;
+  display: flex;
+}
+
+.primers > p {
+  color: #474747;
+  text-align: center;
+  font-family: Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif;
+  font-size: xx-large;
+}
+
+.primer {
+  width: 75%;
+  height: 350px;
+  border-width: 1px;
+  border-top-style: solid;
+  border-top-color: #474747;
+  border-left-style: solid;
+  border-left-color: #474747;
+  border-radius: 10px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  font-size: xx-large;
+  display: flex;
+}
+
+.pict {
+  width: calc(50% - 7.5px);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.txt {
+  width: 50px;
+  text-align: center;
+  color: #ffffff80;
+  font-size: medium;
+  font-weight: bold;
 }
 
 footer {
@@ -246,7 +310,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   gap: 50px;
-  margin-top: 100px;
+  margin-top: 30px;
   padding: 20px 0;
   font-family: Andale Mono, monospace;
   font-weight: bold;
@@ -301,24 +365,6 @@ footer > div {
   font-size: x-large;
 }
 
-.foot-num, .foot-em {
-  max-height: 50px;
-}
-
-footer p:last-child:hover {
-  color: #f02a2a;
-}
-
-.foot-num-1, .foot-em-1 {
-  margin: 0;
-  font-size: 15px;
-}
-
-.foot-num-2, .foot-em-2 {
-  margin: 0;
-  font-size: 20px;
-}
-
 @media screen and (min-width: 539px) and (max-width: 992px) {
   .mainImg {
     height: 250px;
@@ -330,7 +376,7 @@ footer p:last-child:hover {
   }
 
   .secPict0 {
-    margin-top: 50px;
+    height: 100px;
   }
 
   .secPict {
@@ -338,9 +384,11 @@ footer p:last-child:hover {
   }
 
   .secPict-0 {
-    width: 250px;
-    height: 240px;
-    padding: 0;
+    height: 100px;
+  }
+
+  .secPict-0 p {
+    font-size: medium;
   }
 
   .MI-text1 {
@@ -357,15 +405,11 @@ footer p:last-child:hover {
   }
 
   footer {
-    margin-top: 150px;
+    margin-top: 25px;
   }
 
-  .foot-num-1, .foot-em-1 {
-    font-size: 13px;
-  }
-
-  .foot-num-2, .foot-em-2 {
-    font-size: 17px;
+  .primer {
+    height: 230px;
   }
 
   .part2 {
@@ -384,12 +428,6 @@ footer p:last-child:hover {
     margin-bottom: 10px;
   }
 
-  .secPict-0 {
-    width: 200px;
-    height: 160px;
-    padding: 0;
-  }
-
   footer {
     margin-top: 20px;
     font-size: 12px;
@@ -401,13 +439,6 @@ footer p:last-child:hover {
     margin-top: 50px;
   }
 
-  .secPict-0 {
-    width: 400px;
-    height: 280px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-
   .MI-text1 {
     font-size: 30px;
   }
@@ -417,7 +448,7 @@ footer p:last-child:hover {
   }
 
   footer {
-    margin-top: 170px;
+    margin-top: 30px;
   }
 }
 
@@ -451,16 +482,41 @@ footer p:last-child:hover {
   .secPict {
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
     display: flex;
   }
 
   .secPict-0 {
-    width: 55%;
-    height: 150px;
+    width: 75%;
+    height: 30px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 5px;
+  }
+
+  .secPict-0 p {
+    font-size: medium;
+  }
+
+  .zaglav > p:first-child {
+    font-size: x-large;
+  }
+
+  .zaglav > p:last-child {
+    font-size: large;
+  }
+
+  .zaglav > ul {
+    width: 100%;
+    font-size: large;
+  }
+
+  .primers > p {
+    font-size: large;
+  }
+
+  .primer {
+    height: 150px;
   }
 
   header a {
@@ -496,20 +552,37 @@ footer p:last-child:hover {
     font-size: xx-small;
   }
 
-  .secPict0 {
-    margin-top: -20px;
-  }
-
   .secPict0-p {
     font-size: x-small;
   }
 
   .secPict-0 {
-    height: 130px;
+    height: 45px;
   }
 
   .company {
     margin-bottom: 25px;
+  }
+
+  .zaglav > p:first-child {
+    font-size: large;
+  }
+
+  .zaglav > p:last-child {
+    font-size: medium;
+  }
+
+  .zaglav > ul {
+    width: 100%;
+    font-size: medium;
+  }
+
+  .primer {
+    height: 100px;
+  }
+
+  .primers > p {
+    font-size: medium;
   }
 }
 

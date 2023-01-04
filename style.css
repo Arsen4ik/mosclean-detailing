@@ -79,7 +79,6 @@ header a:active {
     background-position-x: center;
     width: 90%;
     height: 500px;
-    /* background-color: rgb(25, 26, 36); */
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -97,7 +96,6 @@ header a:active {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* background-color: violet; */
 }
 
 
@@ -120,15 +118,12 @@ header a:active {
     height: 50px;
     border: 0;
     border-radius: 10px;
-    /* background-color: rgba(255, 217, 0, 0.9); */
     background-color: whitesmoke;
     color: rgb(0, 0, 0);
     box-shadow: 0 0 25px 0 rgba(255, 255, 255, 0.9);
-    /* text-shadow: rgba(250, 5, 5, 0.3) 1px 1px;  */
     display: flex;
     justify-content: center;
     align-items: center;
- 
     transition: all .25s ease-in-out;
 }
 
@@ -142,12 +137,10 @@ header a:active {
 .MI-text2:hover {
     background-color: rgba(0, 0, 0, 0.1);
     color: rgb(255, 255, 255);
-    /* box-shadow: 20px 20px rgba(204, 173, 0), -20px -20px rgba(204, 173, 0); */
     box-shadow: 0px 1px 2px 5px rgba(255, 255, 255, 0.7),
             1px 2px 4px 0px rgba(255, 255, 255, 0.7),
             2px 4px 8px 0px rgba(255, 255, 255, 0.7),
             2px 4px 16px 0px rgba(255, 255, 255, 0.7);
-    /* text-shadow: .5px .5px whitesmoke; */
 }
 .MI-text2:active {
     background-color: rgb(170, 22, 22);
@@ -155,18 +148,14 @@ header a:active {
 }
 
 .secPict0 {
-    height: 20vh;
+    height: 15vh;
     background-color: white;
-    color: rgb(63, 63, 63);
+    color: rgb(141, 17, 42);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .secPict0-p {
-    /* font-size: x-large;
-    font-family: Andale Mono, monospace; 
-    font-family: 'Kelly Slab', cursive;
-    font-family: 'Ruslan Display', cursive; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     font-size: xx-large;
@@ -178,59 +167,42 @@ header a:active {
     height: auto;
     background-color: white;
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, auto);
-    /* flex-wrap: wrap; */
-    /* flex-direction: row; */
-    align-content: center;
-    justify-content: center;
-    padding: 2% 0;
-    gap: 30px;
+    box-sizing: border-box;
+}
+.secPict>.option:last-child {
+    grid-column-start: 1;
+    grid-column-end: 5;
 }
 .secPict-0 {
-    /* width: calc(33% - 42px); */
-    /* padding-top: 50px; */
-    width: 500px;
-    height: 380px;
+    height: 120px;
     background-repeat: no-repeat;
-    background-color: whitesmoke;
-    border-radius: 10px;
-    margin: 7px;
-    padding: 15px 0; 
-    box-shadow: 0px 1px 2px 0px rgba(88, 88, 88, 0.7);
-
+    padding: 15px 5px; 
     display: flex;
     flex-direction: column;
+    gap: 10px;
     justify-content: center;
     align-items: center;
-
     transition: all .5s ease-in-out;
-
-}
-.secPict-0:hover {
-    transform: scale(1.05);
-    background-color: white; 
-    box-shadow: 2px 4px 5px 2px rgba(128, 128, 128, 0.7);
 }
 
-.secPict-0:hover>.part1 {
-    /* transition: all .5s ease-in-out;
-    transform: scale(1.2); */
-    opacity: 0.8;
-}
-
-/* .secPict-0:hover>.part2 {
-    color: rgb(71, 71, 71);
+/* .secPict-0:last-child {
+    box-shadow: 0px 1px 2px 0px rgba(88, 88, 88, 0.7);
 } */
+.secPict-0:hover {
+    background-color: rgb(231, 231, 231); 
+    /* box-shadow: 2px 4px 5px 2px rgba(128, 128, 128, 0.7); */
+    /* box-shadow: 1px 1px rgba(167, 0, 0, 0.7); */
+}
 
-.part1 {
-    /* background-color: white;
-    border-radius: 15px;
-    width: 90%;
-    height: 90%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center; */
+.secPict-0:hover>p {
+    color: black;
+}
+
+
+/* .part1 {
     width: 90%;
     height: 90%;
     border-radius: 3px;
@@ -238,7 +210,7 @@ header a:active {
     background-position-x: center;
     background-position-y: center;
     background-size: cover;
-}
+} */
 .part2 {
     color: rgb(63, 63, 63);
     padding-top: 10px;
@@ -247,62 +219,101 @@ header a:active {
     width: 90%;
     height: 10%;
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* .secPict1 {
-    background-image: url(cars/d4d364a1-017d-499c-8b6d-29300fd030a6.jpeg);
-} */
-.secPict2 {
-    background-image: url(cars/d4d364a1-017d-499c-8b6d-29300fd030a6.jpeg);
+
+.zaglav {
+    width: 100%;
+    color: rgb(63, 63, 63);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: x-large;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
-.secPict3 {
-    background-image: url(cars/2b214dd6-7e57-4bbc-bb9e-568058446622.jpeg);
+.zaglav>p:nth-child(2) {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.secPict4 {
-    background-image: url(cars/2e36aec3-ba18-4276-b2d4-62472cfece73.jpeg);
+
+.zaglav>ul {
+    width: 100%;
 }
-.secPict5 {
-    background-image: url(cars/f863b486-f10e-429c-907a-9b26b56a1c9e.jpeg);
+
+.zaglav>p:first-child {
+    text-align: center;
+    font-size: xx-large;
 }
-/*
-.paints {
-    width: 65%;
-    height: 90%;
-    border-radius: 3px;
+.zaglav>p:first-child:after {
+    content: "";
+    display: block;
+    width: 90%;
+    height: 1px;
+    background-color: rgb(71, 71, 71);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.primers {
+    background-color: white; 
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 5px;
+}
+.primers>p {
+    font-size: xx-large;
+    color: rgb(71, 71, 71);
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.primer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5px; 
+    flex-direction: row;
+    width: 75%;
+    height: 350px;
+    margin-left: auto; 
+    margin-right: auto;
+    font-size: xx-large; 
+    border-left: 10px rgb(71, 71, 71) solid;
+    border-top: 10px rgb(71, 71, 71) solid;
+    border-radius: 10px;
+    border-width: 1px;
+    gap: 5px;
+}
+
+.pict {
+    width: calc(50% - 7.5px);
+    height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
+    border-radius: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.secPict-1-1 {
-    background-image: url(cars/0f220e43-b148-41c5-9a67-7f213fd51869.jpeg);
-    background-size: contain;
+.txt {
+    width: 50px; 
+    font-size: medium;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255, 0.5);
 }
-.secPict-1-2 {
-    background-size: contain;
-    background-image: url(cars/2d341dc1-53df-40cf-9932-6299e8b9407c.jpeg);
-}
-
-
-.secPict-2-1 {
-    background-image: url(cars/64713093-0812-4845-b8cf-fd00e26033fe.jpeg);
-}
-.secPict-2-2 {
-    background-image: url(cars/d4d364a1-017d-499c-8b6d-29300fd030a6.jpeg);
-}
-
-.secPict-3 {
-    background-image: url(cars/avto-21-0.png);
-}
-.secPict-4 {
-    background-image: url(cars/1614523760_7-p-tank-na-belom-fone-7.png);
-} */
 
 footer {
-    margin-top: 100px;
+    margin-top: 30px;
     display: flex;
     height: 200px;
     justify-content: space-around;
@@ -319,7 +330,6 @@ footer {
 footer>section {
     width: 100%;
     height: 50px;
-    /* background-color: turquoise; */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -327,7 +337,6 @@ footer>section {
 footer section div {
     width: 60px;
     height: 80px;
-    /* background-color: hotpink; */
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: center;
@@ -354,7 +363,7 @@ footer section .img4 {
 
 
 footer>div {
-    display: flex;
+    display: flex; 
     flex-direction: column;
 }
 
@@ -363,34 +372,6 @@ footer>div {
     font-size: x-large;
 }
 
-.foot-num {
-    max-height: 50px;
-}
-.foot-em {
-    max-height: 50px;
-
-}
-
-footer p:last-child:hover {
-    color:rgb(240, 42, 42)
-}
-
-.foot-num-1 {
-    font-size: 15px;
-    margin: 0;
-}
-.foot-em-1 {
-    font-size: 15px;
-    margin: 0;
-}
-.foot-num-2 {
-    font-size: 20px;
-    margin: 0;
-}
-.foot-em-2 {
-    font-size: 20px;
-    margin: 0;
-}
 
 @media screen and (min-width: 539px) and (max-width: 992px) {
     .mainImg {
@@ -401,17 +382,16 @@ footer p:last-child:hover {
         font-size: 25px;
     }
     .secPict0 {
-        margin-top: 50px;
+        height: 100px;
     }
     .secPict {
         margin-bottom: 10px;
-        /* display: flex;
-        justify-content: space-around; */
     }
     .secPict-0 {
-        width: 250px;
-        height: 240px;
-        padding: 0;
+        height: 100px;
+    }
+    .secPict-0 p{
+        font-size: medium;
     }
     .MI-text1 {
         font-size: 30px;
@@ -424,20 +404,11 @@ footer p:last-child:hover {
         font-size: 15px;
     }
     footer {
-        margin-top: 150px;
+        margin-top: 25px;
     }
-
-    .foot-num-1 {
-        font-size: 13px;
-    }
-    .foot-em-1 {
-        font-size: 13px;
-    }
-    .foot-num-2 {
-        font-size: 17px;
-    }
-    .foot-em-2 {
-        font-size: 17px;
+    
+    .primer {
+        height: 230px;
     }
     .part2 {
         padding: 10px 0;
@@ -453,33 +424,11 @@ footer p:last-child:hover {
     }
     .secPict {
         margin-bottom: 10px;
-        /* display: flex;
-        justify-content: space-around; */
-    }
-    .secPict-0 {
-        width: 200px;
-        height: 160px;
-        padding: 0;
     }
     footer {
         margin-top: 20px;
         font-size: 12px;
     }
-    /* .foot-num-1 {
-        font-size: 10px;
-    }
-    .foot-em-1 {
-        font-size: 10px;
-    }
-    .foot-num-2 {
-        font-size: 13px;
-    }
-    .foot-em-2 {
-        font-size: 13px;
-    }
-    .part2 {
-        font-size: 15px;
-    } */
     
 }
 @media screen and (width: 912px) {
@@ -489,12 +438,6 @@ footer p:last-child:hover {
     .secPict0 {
         margin-top: 50px;
     }
-    .secPict-0 {
-        width: 400px;
-        height: 280px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
     .MI-text1 {
         font-size: 30px;
     }
@@ -502,16 +445,12 @@ footer p:last-child:hover {
         font-size: 10px;
     }
     footer {
-        margin-top: 170px;
+        margin-top: 30px;
     }
 }
 
 
 @media screen and (max-width: 538px) {
-    /* * {
-        font-size: 10px;
-    } */
-    
     .secPict0 {
         height: 70px;
     }
@@ -536,17 +475,35 @@ footer p:last-child:hover {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        gap: 10px;
+        gap: 5px;
     }
     .secPict-0 {
-        width: 55%;
-        height: 150px;
-        /* padding: 0; */
+        width: 75%;
+        height: 30px;
         padding-top: 5px;
         margin-left: auto;
         margin-right: auto;
     }
+    .secPict-0 p{
+        font-size: medium;
+    }
 
+    .zaglav>p:first-child {
+        font-size: x-large;
+    }
+    .zaglav>p:last-child {
+        font-size: large;
+    }
+    .zaglav>ul {
+        width: 100%;
+        font-size: large;
+    }
+    .primers>p{
+        font-size: large;
+    }
+    .primer {
+        height: 150px;
+    }
     header a {
         font-size: small;
     }
@@ -556,18 +513,6 @@ footer p:last-child:hover {
         height: 130px;
         gap: 20px;
     }
-    /* .foot-num-1 {
-        font-size: 8px;
-    } 
-    .foot-em-1 {
-        font-size: 8px;
-    }
-    .foot-num-2 {
-        font-size: 12px;
-    }
-    .foot-em-2 {
-        font-size: 12px;
-    } */
     .part2 {
         font-size: 10px;
     }
@@ -586,35 +531,29 @@ footer p:last-child:hover {
     header a {
         font-size: xx-small;
     }
-    .secPict0 {
-        margin-top: -20px;
-    }
     .secPict0-p {
         font-size: x-small;
     }
     .secPict-0 {
-        height: 130px;
+        height: 45px;
     }
     .company {
         margin-bottom: 25px;
     }
-    /* .MI-text2 {
-        height: 15px;
+    .zaglav>p:first-child {
+        font-size: large;
     }
-    .MI-text2 p {
-        font-size: 10px;
-    } */
-    /* .foot-num-1 {
-        font-size: 8px;
+    .zaglav>p:last-child {
+        font-size: medium;
     }
-    .foot-em-1 {
-        font-size: 8px;
+    .zaglav>ul {
+        width: 100%;
+        font-size: medium;
     }
-    .foot-num-2 {
-        font-size: 10px;
+    .primer {
+        height: 100px;
     }
-    .foot-em-2 {
-        font-size: 10px;
-    } */
-
+    .primers>p{
+        font-size: medium;
+    }
 }

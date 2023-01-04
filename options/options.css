@@ -1,6 +1,5 @@
-* {
+/* * {
     font-family: 'Kelly Slab';
-    /* font-family: 'Ruslan Display'; */
 }
 
 body {
@@ -12,7 +11,7 @@ header a {
 }
 
 .zaglav {
-    color: rgb(255, 255, 255);
+    color: rgb(71, 71, 71);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -38,7 +37,7 @@ header a {
     display: block;
     width: 90%;
     height: 1px;
-    background-color: whitesmoke;
+    background-color: rgb(71, 71, 71);
     margin-left: auto;
     margin-right: auto;
 }
@@ -46,7 +45,6 @@ header a {
 .primers {
     background-color: white; 
     height: auto;
-    width: 100%;
     display: flex;
     flex-direction: column;
     padding: 20px 0;
@@ -158,4 +156,4 @@ header a {
     header a {
         font-size: xx-small;
     }
-}
+} */
