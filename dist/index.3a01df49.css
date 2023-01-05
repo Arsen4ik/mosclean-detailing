@@ -13,7 +13,8 @@ body {
 header {
   height: 40px;
   width: 100%;
-  background-color: #474747;
+  background-color: #474747f2;
+  position: fixed;
 }
 
 ul {
@@ -76,25 +77,23 @@ header a:active {
 }
 
 .mainImg {
-  width: 90%;
-  height: 500px;
-  background-image: url("red-sports-car-ferrari-png-23.730d7dc8.png");
+  width: 100%;
+  height: 100vh;
+  background-image: url("stefan-rodriguez-2AovfzYV3rc-unsplash.ca9de5f8.jpg");
   background-position-x: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   justify-content: center;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  transition: transform 6s cubic-bezier(.25, .45, .45, .95);
   display: flex;
 }
 
-.mainImg:hover {
-  transform: scale(1.1);
-}
-
 .company {
+  width: 100%;
+  height: 100%;
+  background-color: #00000080;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -102,32 +101,32 @@ header a:active {
 }
 
 .MI-text1 {
-  color: #fff;
+  color: #f90;
   letter-spacing: 3px;
-  text-shadow: 2px 2px #525252;
+  text-shadow: 2px 2px #000;
   margin: 0;
   font-family: Kelly Slab;
-  font-size: 50px;
+  font-size: 100px;
   font-weight: bold;
 }
 
 .MI-text1-2 {
-  color: #525252;
+  color: #000;
   text-shadow: -1px -1px #fff;
 }
 
 .MI-text2 {
-  width: 80%;
+  width: 400px;
   height: 50px;
   color: #000;
-  background-color: #f5f5f5;
+  background-color: #f90;
   border: 0;
-  border-radius: 10px;
+  border-radius: 3px;
   justify-content: center;
   align-items: center;
   transition: all .25s ease-in-out;
   display: flex;
-  box-shadow: 0 0 25px #ffffffe6;
+  box-shadow: 0 0 10px #000000e6;
 }
 
 .MI-text2 p {
@@ -183,7 +182,7 @@ header a:active {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   padding: 15px 5px;
   transition: all .5s ease-in-out;
   display: flex;
@@ -340,7 +339,7 @@ footer section div:hover {
 }
 
 footer section .img1 {
-  background-image: url("phone-call-telephone-svgrepo-com.9ce02605.svg");
+  background-image: url("phone-svgrepo-com.bf186d70.svg");
 }
 
 footer section .img2 {
@@ -384,7 +383,8 @@ footer > div {
   }
 
   .secPict-0 {
-    height: 100px;
+    height: 75px;
+    padding: 0;
   }
 
   .secPict-0 p {
@@ -414,7 +414,7 @@ footer > div {
 
   .part2 {
     height: 50px;
-    padding: 10px 0;
+    padding: 0;
     font-size: 20px;
   }
 }
@@ -458,7 +458,7 @@ footer > div {
   }
 
   .secPict0-p {
-    font-size: small;
+    font-size: large;
   }
 
   .mainImg {
@@ -482,7 +482,6 @@ footer > div {
   .secPict {
     flex-direction: column;
     justify-content: center;
-    gap: 5px;
     display: flex;
   }
 
@@ -495,14 +494,10 @@ footer > div {
   }
 
   .secPict-0 p {
-    font-size: medium;
+    font-size: small;
   }
 
-  .zaglav > p:first-child {
-    font-size: x-large;
-  }
-
-  .zaglav > p:last-child {
+  .zaglav > p:first-child, .zaglav > p:last-child {
     font-size: large;
   }
 
@@ -553,7 +548,7 @@ footer > div {
   }
 
   .secPict0-p {
-    font-size: x-small;
+    font-size: small;
   }
 
   .secPict-0 {

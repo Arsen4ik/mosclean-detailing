@@ -1,0 +1,210 @@
+header {
+    height: 40px;
+    background-color: rgb(71, 71, 71);
+    position: fixed; 
+    margin-top: -32px;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.logo0 {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.logo {
+    background-image: url(../logo/tire-svgrepo-com.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+} 
+nav {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    padding: 0 30px;
+    font-family: inherit;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+ul {
+    margin: 0;
+} 
+ul li {
+    min-width: 24px;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header a:active {
+    color: crimson;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    /* font-family: Andale Mono, monospace; */
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* // */
+
+footer {
+    display: flex;
+    height: 200px;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(71,71,71);
+    color: rgb(255, 255, 255);
+    font-family: Andale Mono, monospace;
+    font-weight: bold;
+    gap: 50px;
+    padding: 20px 0;
+}
+
+footer>section {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+footer section div {
+    width: 60px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid whitesmoke;
+}
+footer section div:hover {
+    border-top: 1px solid;
+}
+
+footer section .img1 {
+    background-image: url(../Main-links/contact-pictures/phone-svgrepo-com.svg);
+}
+footer section .img2 {
+    background-image: url(../Main-links/contact-pictures/youtube-icon-svgrepo-com.svg);
+}
+footer section .img3 {
+    background-image: url(../Main-links/contact-pictures/instagram-svgrepo-com.svg);
+}
+footer section .img4 {
+    background-image: url(../Main-links/contact-pictures/email-svgrepo-com.svg);
+}
+
+
+footer>div {
+    display: flex; 
+    flex-direction: column;
+}
+
+#copi {
+    font-family: 'Kelly Slab';
+    font-size: x-large;
+}
+
+/* // // // */
+
+body {
+    background-color: whitesmoke;
+    margin: 0;
+}
+hr {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+p {
+    color: rgb(66, 66, 66);
+}
+
+.title>p {
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+}
+section p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+.topic {
+    height: 50px;
+}
+.topic>p {
+    font-size: x-large;
+    text-align: center;
+}
+
+.prices {
+    background-color: wheat;
+    width: 80%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.prices p {
+    color: black;
+}
+
+.specialPrice {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+}
+.specialPrice .optionsInPrices {
+    background-color: white;
+    width: 100%;
+    border-radius: 15px;
+    height: 180px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.specialPrice .optionsInPrices .prices {
+    width: calc(100% - 35px);
+    border-radius: 15px;
+    background-color: rgb(255, 219, 152);
+}
+
+.ending {
+    background-color: rgb(221, 221, 221);
+    margin-top: 30px;
+}
