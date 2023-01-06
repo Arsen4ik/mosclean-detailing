@@ -59,10 +59,52 @@ header a:active {
     flex-direction: row;
     gap: 20px;
     /* font-family: Andale Mono, monospace; */
-    font-weight: bold;
+    font-weight: lighter;
     font-size: 15px;
 }
 
+/*  */
+.menu2 {
+    background-image: url(../Main-links/contact-pictures/menu-svgrepo-com.svg);
+    width: 35px;
+    height: 25px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: none;
+}
+.menuOptions {
+    width: 100px;
+    height: 130px;
+    background-color: rgb(46, 46, 46);
+    position: absolute;
+    right: 10%;
+    top: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
+    display: none;
+    border-radius: 3px;
+    border: 3px solid rgb(177, 35, 0);
+}
+
+.menuOptions li {
+    height: 26px;
+    text-align: center;
+}
+.triangle {
+    position: absolute;
+    top: 25px;
+    right: 10.3%;
+    border: 10px solid transparent; 
+    border-bottom: 20px solid rgb(255, 219, 152);
+    display: none;
+}
 /* // */
 
 footer {
@@ -179,6 +221,7 @@ section p {
 }
 .prices p {
     color: black;
+    padding: 0 3px;
 }
 
 .specialPrice {
@@ -207,4 +250,56 @@ section p {
 .ending {
     background-color: rgb(221, 221, 221);
     margin-top: 30px;
+}
+.ending p {
+    color: black;
+}
+.endings {
+    text-align: center;
+}
+
+@media screen and (min-width: 539px) and (max-width: 992px) {
+    .title p {
+        font-size: xx-large;
+    }
+}
+
+@media screen and (max-width: 538px) {
+    header {
+        margin-top: -18px;
+    }
+    header a {
+        font-size: xx-small;
+    }
+    /* // */
+    .title>p {
+        font-size: large;
+        text-align: center;
+    }
+    section p {
+        font-size: x-small;
+    }
+    .topic>p {
+        font-size: medium;
+    }
+    .ending p {
+        font-size: x-small;
+    }
+    .specialPrice .optionsInPrices {
+        height: 140px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .menu {
+        display: none;
+    }
+    .menu2 {
+        display: inline;
+    }
+    .menuOptions {
+        display: inline;
+    }
+    .triangle {
+        display: inline;
+    }
 }

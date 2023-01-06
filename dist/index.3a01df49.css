@@ -1,6 +1,5 @@
 * {
   font-family: Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif;
-  font-weight: bold;
 }
 
 body {
@@ -14,6 +13,7 @@ header {
   height: 40px;
   width: 100%;
   background-color: #474747f2;
+  font-weight: bold;
   position: fixed;
 }
 
@@ -71,7 +71,7 @@ header a:active {
   flex-direction: row;
   gap: 20px;
   font-size: 15px;
-  font-weight: bold;
+  font-weight: lighter;
   list-style-type: none;
   display: flex;
 }
@@ -93,7 +93,7 @@ header a:active {
 .company {
   width: 100%;
   height: 100%;
-  background-color: #00000080;
+  background-color: #0000004d;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -188,6 +188,10 @@ header a:active {
   display: flex;
 }
 
+.secPict-0 p {
+  font-weight: bold;
+}
+
 .secPict-0:hover {
   background-color: #e7e7e7;
 }
@@ -233,6 +237,7 @@ header a:active {
 .zaglav > p:first-child {
   text-align: center;
   font-size: xx-large;
+  font-weight: bold;
 }
 
 .zaglav > p:first-child:after {
@@ -259,6 +264,7 @@ header a:active {
   text-align: center;
   font-family: Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif;
   font-size: xx-large;
+  font-weight: bold;
 }
 
 .primer {
@@ -364,9 +370,52 @@ footer > div {
   font-size: x-large;
 }
 
+.menu2 {
+  width: 35px;
+  height: 25px;
+  box-sizing: border-box;
+  background-color: #fff;
+  background-image: url("menu-svgrepo-com.8fc08711.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 10px;
+  display: none;
+}
+
+.menuOptions {
+  width: 28%;
+  height: 130px;
+  background-color: #2e2e2e;
+  justify-content: center;
+  font-weight: lighter;
+  display: flex;
+  position: absolute;
+  top: 55px;
+  right: 10%;
+}
+
+.menuOptions ul {
+  border-left: 2px solid #fff;
+  padding-left: 10px;
+}
+
+.menuOptions li {
+  height: 26px;
+  text-align: center;
+}
+
+.triangle {
+  border: 10px solid #0000;
+  border-bottom: 20px solid #2e2e2e;
+  position: absolute;
+  top: 25px;
+  right: 10%;
+}
+
 @media screen and (min-width: 539px) and (max-width: 992px) {
   .mainImg {
-    height: 250px;
+    height: 600px;
     margin-top: 32px;
   }
 
@@ -396,7 +445,7 @@ footer > div {
   }
 
   .MI-text2 {
-    width: 100%;
+    width: 30%;
     height: 30px;
   }
 
@@ -462,7 +511,7 @@ footer > div {
   }
 
   .mainImg {
-    height: 150px;
+    height: 400px;
   }
 
   .MI-text1 {
@@ -470,7 +519,7 @@ footer > div {
   }
 
   .MI-text2 {
-    width: 100%;
+    width: 40%;
     height: 30px;
     border-radius: 5px;
   }
@@ -538,6 +587,16 @@ footer > div {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+
+  .menu2, .menuOptions, .triangle {
+    display: inline;
+  }
+}
+
 @media screen and (width: 280px) {
   nav {
     padding: 0 10px;
@@ -553,10 +612,6 @@ footer > div {
 
   .secPict-0 {
     height: 45px;
-  }
-
-  .company {
-    margin-bottom: 25px;
   }
 
   .zaglav > p:first-child {
@@ -578,6 +633,11 @@ footer > div {
 
   .primers > p {
     font-size: medium;
+  }
+
+  .menu2 {
+    height: 25px;
+    width: 35px;
   }
 }
 

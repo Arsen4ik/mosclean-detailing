@@ -21,13 +21,23 @@
         <nav>
             <a href="index.html" class="logo0"><div class="logo"></div><div>MOSCLEAN DETAILING</div></a>            
             <ul class="menu">
-                <!-- <li><a href="header-links/ourProjects.html">наши работы</a></li> -->
                 <li><a href="Main-links/prices.html">ЦЕНЫ</a></li>
                 <li><a href="Main-links/about.html">О НАС</a></li>
                 <li><a href="#secPict0">УСЛУГИ</a></li>
                 <li><a href="Main-links/about.html">ОТЗЫВЫ</a></li>
                 <li><a href="Main-links/about.html">КОНТАКТЫ</a></li>
             </ul>
+            <div class="menu2" @click="openMenu()"></div>
+            <div class="triangle" v-if="ifOpenedMenu"></div>
+            <div class="menuOptions" v-if="ifOpenedMenu">
+                <ul class="optionsInMenu">
+                    <li><a href="Main-links/prices.html">ЦЕНЫ</a></li>
+                    <li><a href="Main-links/about.html">О НАС</a></li>
+                    <li><a href="#secPict0">УСЛУГИ</a></li>
+                    <li><a href="Main-links/about.html">ОТЗЫВЫ</a></li>
+                    <li><a href="Main-links/about.html">КОНТАКТЫ</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <!-- // --> 

@@ -3,6 +3,7 @@ const app = Vue.createApp({
         return {
             date: new Date().getFullYear(),
             Option: 1,
+            ifOpenedMenu: false,
         }
     },
     computed: {
@@ -90,12 +91,11 @@ const app = Vue.createApp({
         },
     },
     methods: {
-        // connection(){
-        //     this.connect = !this.connect
-        //     console.log('gg')
-        // }
         chooseOption(n){
             this.Option = n
+        },
+        openMenu(){
+            this.ifOpenedMenu = !this.ifOpenedMenu
         }
     }
 })
